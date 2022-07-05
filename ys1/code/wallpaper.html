@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/wallpaper.css">
+    <script src="../js/animate1.js"></script>
+    <script src="../js/wallpaper.js"></script>
+    <script src="../js/jquery-1.12.4.js"></script>
+    <link rel="stylesheet" href="../cj/assets/css/style.css">
+    <script src="../js/data.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/operate.js"></script>
+</head>
+
+<body>
+    <div class="dh">
+        <img src="../image/ys.png" alt="">
+        <ul>
+            <li><a href="./index1.html">主页</a></li>
+            <li><a href="./jsintroduce.html">角色介绍</a></li>
+            <li><a href="./wallpaper.html">壁纸</a></li>
+            <li><a href="./jsclassification.html">角色分类</a></li>
+            <li><a href="./liaoli.html">特殊料理</a></li>
+            <li><a href="./shijie.html">世界</a></li>
+        </ul>
+    </div>
+    <div class="main">
+        <div class="focus">
+            <!-- 左侧按钮 -->
+            <a href="javascript:;" class="arrow-l">
+                            &lt;
+                        </a>
+            <!-- 右侧按钮 -->
+            <a href="javascript:;" class="arrow-r"> &gt; </a>
+            <!-- 核心的滚动区域 -->
+            <ul>
+                <li>
+                    <a href="#"><img src="../image/yd.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../image/tm.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../image/sz.jpg" alt=""></a>
+                </li>
+                <li>
+                    <a href="#"><img src="../image/xy.jpg" alt=""></a>
+                </li>
+            </ul>
+            <!-- 小圆圈 -->
+            <ol class="circle">
+
+            </ol>
+        </div>
+    </div>
+    <div class="zi">
+        <p>壁纸展示</p>
+    </div>
+    <div class="isg__Img__wrap" id="wrap">
+
+    </div>
+    <div class="flex">
+        <img src="../image/gw/san.png" alt="">
+    </div>
+    </div>
+    <script>
+        const img = new $isg_Img({
+            data: data,
+            curType: '全部',
+            parasitifer: '#wrap'
+        });
+        $('.flex').click(function() {
+            $('body,html').animate({
+                scrollTop: 0
+            });
+        })
+    </script>
+</body>
+
+</html>

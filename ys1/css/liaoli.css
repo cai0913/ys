@@ -1,0 +1,245 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../image/gw/sjbj.png);
+    background-size: cover;
+}
+
+.dh {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 82px;
+    background-color: red;
+    background-color: #333;
+    z-index: 1;
+}
+
+.dh img {
+    vertical-align: middle;
+    line-height: 82px;
+    height: 70px;
+    padding: 6px 75px 6px 5px;
+}
+
+.dh ul {
+    width: 100%;
+    align-items: center;
+}
+
+.dh ul li {
+    float: left;
+    justify-content: center;
+    line-height: 82px;
+    text-align: center;
+    list-style: none;
+    margin-right: 10px;
+    width: 116px;
+    height: 82px;
+}
+
+.dh ul li a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ccc;
+}
+
+
+/* ajaxmiddle */
+
+.ajaxmiddle {
+    margin-top: 150px;
+    margin-left: 5vw;
+    width: 90%;
+    padding-bottom: 15vh;
+    background-color: #fff;
+    opacity: .9;
+}
+
+.ajaxmiddle .top h2 {
+    margin-left: 36vw;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.ajaxmiddle .top {
+    padding: 30px 0 20px 0;
+    min-width: 400px;
+    margin-left: 50px;
+}
+
+.ajaxmiddle .top input[type=text] {
+    width: 400px;
+    height: 40px;
+    padding: 0 4px;
+    box-sizing: border-box;
+    vertical-align: middle;
+    margin-left: 380px;
+    margin-bottom: 30px;
+}
+
+.ajaxmiddle .top button {
+    width: 60px;
+    height: 40px;
+    margin-left: 10px;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+.ajaxmiddle .jslist {
+    margin-left: 132px;
+}
+
+.ajaxmiddle .ajaxmiddle .jslist table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin: 0 auto;
+    word-break: keep-all;
+}
+
+.ajaxmiddle .jslist th {
+    border: 1px solid #ccc;
+    padding: 6px 20px;
+    width: 80px;
+}
+
+.ajaxmiddle .jslist td {
+    border: 1px solid #ccc;
+    padding: 6px 20px;
+    text-align: center;
+}
+
+.ajaxmiddle .jslist a {
+    color: #0D65FD;
+    text-decoration: none
+}
+
+.ajaxmiddle .jslist a:hover {
+    color: #CB0112
+}
+
+.edit {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.edit-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: .5
+}
+
+.edit-center {
+    position: fixed;
+    background: #fff;
+    padding: 20px 40px;
+    border-radius: 20px
+}
+
+.edit-center span {
+    display: inline-block;
+    width: 80px;
+    text-align: right;
+    margin-right: 5px
+}
+
+.edit-center input[type=text] {
+    margin-right: 25px;
+    padding: 2px 3px
+}
+
+.edit-center button {
+    padding: 3px 12px;
+    cursor: pointer;
+    margin: 0 5px
+}
+
+
+/* main */
+
+.main {
+    height: 100%;
+    margin-top: 115px;
+    margin-bottom: 10vh;
+}
+
+.main h1 {
+    font-size: 40px;
+    margin-left: 39vw;
+    margin-bottom: 15vh;
+}
+
+.main ul,
+.main li {
+    list-style: none;
+}
+
+.main ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.main li {
+    flex: 3;
+    float: left;
+    height: 80vh;
+    margin-right: 10px;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+.main ul li .top {
+    height: 36%;
+    display: none;
+    background-color: #fff;
+}
+
+.main ul li .middle {
+    height: 28%;
+    display: none;
+    background-color: #fff;
+}
+
+.main ul li .bottom {
+    height: 36%;
+    display: none;
+    background-color: #fff;
+}
+
+.main ul li .top .ll {
+    width: 100%;
+    height: 100%;
+}
+
+.main ul li .bottom .tsll {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.main ul li:first-child {
+    margin-left: 10px;
+}
+
+#bottom {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-left: 5%;
+    margin-bottom: 5vh;
+    padding: 40px 0;
+}

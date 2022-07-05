@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>原神角色介绍</title>
+    <link rel="stylesheet" href="../css/jsintroduce.css">
+    <link id="icon" rel="shortcut icon" href="https://genshin.mihoyo.com/favicon.ico" />
+</head>
+
+<body>
+    <div class="dh">
+        <img src="../image/ys.png" alt="">
+        <ul>
+            <li><a href="./index1.html">主页</a></li>
+            <li><a href="./jsintroduce.html">角色介绍</a></li>
+            <li><a href="./wallpaper.html">壁纸</a></li>
+            <li><a href="./jsclassification.html">角色分类</a></li>
+            <li><a href="./liaoli.html">特殊料理</a></li>
+            <li><a href="./shijie.html">世界</a></li>
+        </ul>
+    </div>
+    <div class="t"></div>
+    <div class="middle">
+        <div class="card color1">
+            <div class="photo">
+                <img src="../image/ht.jpg" alt="">
+            </div>
+            <h1>往生堂堂主</h1>
+            <h2>胡桃</h2>
+            <p>既是「往生堂」堂主，也是璃月「著名」诗人，她总是飞快地出现又消失，犹如闪电与火花并行，甫一现身便点燃一切。</p>
+            <a href="./hutao.html">了解更多</a>
+        </div>
+        <div class="card color2">
+            <div class="photo">
+                <img src="../image/x.jpg" alt="">
+            </div>
+            <h1>三眼五显仙人</h1>
+            <h2>魈</h2>
+            <p>在璃月港住民心中，居于「绝云间」的「三眼五显仙人」，皆有极高名望。每逢佳节吉日，人们都会上香祷告，祈望仙人保佑。</p>
+            <a href="./xiao.html">了解更多</a>
+        </div>
+        <div class="card color3">
+            <div class="photo">
+                <img src="../image/ldjj.jpg" alt="">
+            </div>
+            <h1>雷电将军</h1>
+            <h2>雷电影</h2>
+            <p>稻妻全土毋容置疑的统治者。担负着「御建鸣神主尊大御所」之威名，许稻妻民众以亘古不变之「永恒」。</p>
+            <a href="./ying.html">了解更多</a>
+        </div>
+        <div class="card color4">
+            <div class="photo">
+                <img src="../image/bcsz.jpg" alt="">
+            </div>
+            <h1>鸣神大社宫司</h1>
+            <h2>八重神子</h2>
+            <p>无人知晓真实，就像无人能轻易从秘林中找到一只与过客擦肩的仙狐。可若是狐狸注视着人…狐狸又将往何处去？</p>
+            <a href="./shenzi.html">了解更多</a>
+        </div>
+        <div class="card color3">
+            <div class="photo">
+                <img src="../image/ldjj.jpg" alt="">
+            </div>
+            <h1>雷电将军</h1>
+            <h2>雷电影</h2>
+            <p>稻妻全土毋容置疑的统治者。担负着「御建鸣神主尊大御所」之威名，许稻妻民众以亘古不变之「永恒」。</p>
+            <a href="./ying.html">了解更多</a>
+        </div>
+    </div>
+    <button class="more">更多</button>
+    <script>
+        var card = document.querySelectorAll('.card');
+        var btn = document.querySelector('.more');
+        var t = document.querySelector('.t');
+        var num = 3;
+        for (var i = 0; i < card.length; i++) {
+            if (i > 3) {
+                // card[i].classList.add('.fx');
+                card[i].style.display = 'none';
+            }
+        }
+        btn.addEventListener('click', function() {
+            t.classList.add('.m');
+            for (var i = 0; i < 3; i++) {
+                card[i].classList.add('.m');
+            }
+            if (num < card.length) {
+                for (var i = num; i < i + 3; i++) {
+                    card[i].style.display = 'flex';
+                }
+                num += 4;
+            }
+        })
+    </script>
+</body>
+
+</html>

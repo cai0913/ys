@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>稻妻</title>
+    <link rel="stylesheet" href="../css/daoqi.css">
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/dqrw.js"></script>
+    <link id="icon" rel="shortcut icon" href="https://genshin.mihoyo.com/favicon.ico" />
+</head>
+
+<body>
+    <div class="dh">
+        <img src="../image/ys.png" alt="">
+        <ul>
+            <li><a href="./index1.html">主页</a></li>
+            <li><a href="./jsintroduce.html">角色介绍</a></li>
+            <li><a href="./wallpaper.html">壁纸</a></li>
+            <li><a href="./jsclassification.html">角色分类</a></li>
+            <li><a href="./liaoli.html">特殊料理</a></li>
+            <li><a href="./shijie.html">世界</a></li>
+        </ul>
+    </div>
+    <div class="bg">
+        <div class="one"></div>
+        <div class="two"></div>
+        <ul>
+            <li><a href="./mengde.html">蒙德城</a></li>
+            <li><a href="./liyue.html">璃月港</a></li>
+            <li><a href="./daoqi.html" class="active">稻妻城</a></li>
+            <li><a href="javascript:;">敬请期待</a></li>
+        </ul>
+        <div class="rw">
+            <img src="../image/gw/qtdt.png" alt="" class="lh">
+        </div>
+        <div class="ys">
+            <img src="../image/gw/fystb.png" alt="" width="300" class="ys1">
+        </div>
+        <div class="zi">
+            <img src="../image/gw/q.png" alt="" height="90" class="zi1">
+        </div>
+        <div class="cv">
+            <img src="../image/gw/d.jfif" alt="" height="54" class="lf">
+            <span class="nm"></span>
+            <img src="../image/gw/ht.png" alt="" height="54" class="rg">
+            <audio src="../image/gw/yp/sllhyy.mp3" class="au"></audio>
+        </div>
+        <div class="yl">
+            <div class="yl1"></div>
+        </div>
+        <div class="my">
+            <img src="../image/gw/qyl.png" alt="" height="150" class="yl2">
+        </div>
+        <div class="bottom">
+            <img src="../image/gw/zan.png" alt="" class="left">
+            <div class="js">
+                <img src="../image/gw/qtx.png" alt="" class="tx">
+                <img src="../image/gw/qtx.png" alt="" class="tx">
+                <img src="../image/gw/qtx.png" alt="" class="tx">
+                <img src="../image/gw/qtx.png" alt="" class="tx">
+                <img src="../image/gw/qtx.png" alt="" class="tx">
+                <img src="../image/gw/qtx.png" alt="" class="tx">
+                <img src="../image/gw/qtx.png" alt="" class="tx">
+            </div>
+            <img src="../image/gw/yan.png" alt="" class="right">
+        </div>
+    </div>
+
+    <script>
+        var cur_index = 0;
+        var i = 0;
+        change(cur_index);
+        $('.tx').each(function(index, element) {
+            $(this).attr('src', img_arr[index]);
+            $(this).click(function() {
+                cur_index = index;
+                i = index;
+                change(cur_index);
+            })
+        });
+
+        $('.left').click(function() {
+            if (cur_index > 0) {
+                cur_index -= 1;
+                i -= 1;
+                change(cur_index);
+            } else {
+                cur_index = 6;
+                i = 6;
+                change(cur_index);
+            }
+        });
+
+        $('.right').click(function() {
+            if (cur_index < $('.tx').length) {
+                cur_index += 1;
+                i += 1;
+                change(cur_index);
+            } else {
+                cur_index = 0;
+                i = 0;
+                change(cur_index);
+            }
+        });
+
+        function change(cur_index) {
+            $('.selected').removeClass('selected');
+            $('.tx:eq(' + cur_index + ')').addClass('selected');
+            $('.lh').attr('src', avatar_arr[cur_index]);
+            $('.yl1').html(intro_arr[cur_index]);
+            $('.zi1').attr('src', intro_name[cur_index]);
+            $('.yl2').attr('src', intro_yl[cur_index]);
+            $('.nm').html(intro_sy[cur_index]);
+            $('.rg').click(function(cur_index) {
+                $('.au')[0].pause();
+                $('.au').attr('src', audio[i]);
+                $('.au')[0].play();
+            });
+            $('.ys1').attr('src', ys[cur_index]);
+        }
+    </script>
+</body>
+
+</html>

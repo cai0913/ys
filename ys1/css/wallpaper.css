@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(../image/gw/sjbj.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.dh {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 82px;
+    background-color: red;
+    background-color: #333;
+    z-index: 1;
+}
+
+.dh img {
+    vertical-align: middle;
+    line-height: 82px;
+    height: 70px;
+    padding: 6px 75px 6px 5px;
+}
+
+.dh ul {
+    width: 100%;
+    align-items: center;
+}
+
+.dh ul li {
+    float: left;
+    justify-content: center;
+    line-height: 82px;
+    text-align: center;
+    list-style: none;
+    margin-right: 10px;
+    width: 116px;
+    height: 82px;
+}
+
+.dh ul li a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.main {
+    width: 980px;
+    height: 450px;
+    margin-left: 219px;
+    margin-top: 10px;
+    margin: 18vh auto;
+    background-color: transparent;
+}
+
+.focus {
+    position: relative;
+    float: right;
+    right: 130px;
+    width: 720px;
+    height: 450px;
+    background-color: purple;
+    overflow: hidden;
+}
+
+.focus ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 600%;
+    list-style: none;
+}
+
+.focus ul li {
+    float: left;
+}
+
+.focus ol {
+    list-style: none;
+}
+
+.arrow-l,
+.arrow-r {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 24px;
+    height: 40px;
+    background: rgba(0, 0, 0, .3);
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    font-family: 'icomoon';
+    font-size: 18px;
+    z-index: 2;
+}
+
+.arrow-r {
+    right: 0;
+}
+
+.circle {
+    position: absolute;
+    left: 324px;
+    bottom: 10px;
+}
+
+.circle li {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    /*background-color: #fff;*/
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    margin: 0 3px;
+    border-radius: 50%;
+    /*鼠标经过显示小手*/
+    cursor: pointer;
+}
+
+.current {
+    background-color: #fff;
+}
+
+.zi {
+    margin-top: 10vh;
+    margin-left: 45vw;
+}
+
+.zi p {
+    font-size: 30px;
+    font-weight: 700;
+    color: rgba(255, 0, 0, 0.8)
+}
+
+.flex {
+    position: fixed;
+    left: 95%;
+    top: 85%;
+    width: 64px;
+    height: 64px;
+    text-align: center;
+    line-height: 64px;
+    background-color: #2472d1;
+    border-radius: 50%;
+    z-index: 999;
+}

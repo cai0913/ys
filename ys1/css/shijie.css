@@ -1,0 +1,762 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.tb {
+    width: 12vh;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.dh {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 82px;
+    background-color: red;
+    background-color: #333;
+    opacity: .5;
+    z-index: 9999;
+}
+
+.dh:hover {
+    opacity: 1;
+}
+
+.dh img {
+    vertical-align: middle;
+    line-height: 82px;
+    height: 70px;
+    padding: 6px 75px 6px 5px;
+}
+
+.dh ul {
+    width: 100%;
+    align-items: center;
+}
+
+.dh ul li {
+    float: left;
+    justify-content: center;
+    line-height: 82px;
+    text-align: center;
+    list-style: none;
+    margin-right: 10px;
+    width: 116px;
+    height: 82px;
+}
+
+.dh ul li a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.middle {
+    width: 100%;
+    height: 100%;
+}
+
+.middle .one {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/gw/sjbj.png);
+    background-size: 100% 100%;
+}
+
+.middle .one .zi {
+    position: absolute;
+    top: 30vh;
+    left: 29vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.middle .one .zi .fh {
+    display: block;
+    width: 52.9vh;
+    color: #fff;
+    line-height: 28px;
+    margin-bottom: 3vh;
+}
+
+.middle .one .zi .zi1 {
+    width: 41.8vh;
+    margin: 0 auto 3vh;
+}
+
+.dl {
+    font-size: 16px;
+    text-shadow: 0 0 12px rgba(110, 159, 193, 0.36), 0 0 12px rgba(110, 159, 193, 0.36);
+    line-height: 1.8;
+    color: #fff;
+}
+
+.middle .one .btn::before {
+    content: '';
+    position: absolute;
+    left: -45%;
+    top: -45%;
+    width: 98px;
+    height: 98px;
+    background: url(../image/gw/hdanbj.png) center no-repeat;
+    background-size: cover;
+    transform-origin: center;
+    animation: wave 1s linear infinite;
+}
+
+.middle .one .btn {
+    position: absolute;
+    bottom: 8vh;
+    left: 50%;
+    width: 52px;
+    height: 52px;
+    transform: translateX(-50%);
+    background: url(../image/gw/anbj.png) center no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.middle .one .btn .bt {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 25px;
+    height: 13px;
+    animation: updown 2s ease-in-out infinite;
+}
+
+@keyframes updown {
+    0% {
+        transform: translate(-50%, -100%);
+    }
+    50% {
+        transform: translate(-50%, -50%);
+    }
+    100% {
+        transform: translate(-50%, -100%);
+    }
+}
+
+@keyframes wave {
+    0% {
+        background-size: 50% 50%;
+        opacity: 1;
+    }
+    50% {
+        background-size: 60% 60%;
+        opacity: .5;
+    }
+    100% {
+        background-size: 85% 85%;
+        opacity: .3;
+    }
+}
+
+.middle {
+    height: 100%;
+    overflow: hidden;
+}
+
+.middle .two {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/gw/sjmengde.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.middle .two .dl {
+    position: absolute;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.middle .two .dl .dl1 {
+    width: 68%;
+}
+
+.bt {
+    display: block;
+    position: relative;
+    font-weight: 400;
+    font-size: 4.6vh;
+    line-height: 9vh;
+    color: #fff;
+}
+
+.bt::before {
+    left: 0;
+    transform: translate(calc(-38vh), -50%);
+    background: url(../image/gw/zb.png) center no-repeat;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 35.6vh;
+    height: 1.3vh;
+}
+
+.bt::after {
+    left: 0;
+    transform: translate(calc(12vh), -50%) rotateY(180deg);
+    background: url(../image/gw/zb.png) center no-repeat;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 35.6vh;
+    height: 1.3vh;
+    color: #fff;
+}
+
+.middle .two .btn1 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    margin-top: 9vh;
+    border: none;
+    background: transparent;
+    color: #fff;
+}
+
+.middle .two .btn1::before {
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 54px;
+    height: 54px;
+    transform-origin: center;
+    background: url(../image/gw/xan.png) center no-repeat;
+    background-size: 100% auto;
+}
+
+.middle .two .btn1::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -40%;
+    width: 98px;
+    height: 98px;
+    background: url(../image/gw/xanbj.png) center no-repeat;
+    background-size: cover;
+    transform-origin: center;
+    animation: wave 1s linear infinite;
+}
+
+.bg {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(18, 18, 18, 0.75);
+    border: 1px solid #030000;
+    padding-top: 106px;
+}
+
+.bg .nr .bottom::-webkit-scrollbar {
+    width: 4px;
+    position: absolute;
+    min-height: 30px;
+    top: 528px;
+    display: block;
+    height: 117px;
+    max-height: 635px;
+    border-radius: 2px;
+    opacity: .1;
+}
+
+.bg .nr .bottom::-webkit-scrollbar-track {
+    background: #756157;
+    width: 4px;
+    opacity: 0.1;
+}
+
+.bg .nr .bottom::-webkit-scrollbar-thumb {
+    width: 4px;
+    line-height: 30px;
+    background: #f5f0e4;
+    box-shadow: 0px 1px 1px 0px rgba(51, 51, 51, 0.06);
+}
+
+.hh {
+    width: 540px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 28px;
+    color: #fff;
+    padding-left: 24px;
+    background: rgba(128, 128, 128, 0.1) url(../image/gw/hh.png) no-repeat left center/auto 100%;
+    display: inline-block;
+    margin-left: 30vw;
+}
+
+.hh1 {
+    position: absolute;
+    top: 106px;
+    left: 68vw;
+    width: 50px;
+    height: 50px;
+    background: rgba(128, 128, 128, 0.1) url(../image/gw/gban.png) center no-repeat;
+    background-size: 20px;
+    border: none;
+}
+
+.middle .bg .nr .bottom {
+    position: absolute;
+    width: 636px;
+    height: 500px;
+    margin-top: 20px;
+    left: 30vw;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.middle .bg .nr .bottom p {
+    color: #fff;
+    margin-top: 20px;
+    width: 580px;
+}
+
+.h1 {
+    position: relative;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 66px;
+    height: 66px;
+    width: 580px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 70px;
+    height: 3px;
+    background: #cca574;
+}
+
+
+/* three */
+
+.middle .three {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/gw/sjliyue.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.middle .three .dl {
+    position: absolute;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.middle .three .dl .dl1 {
+    width: 55%;
+}
+
+.bt {
+    display: block;
+    position: relative;
+    font-weight: 400;
+    font-size: 4.6vh;
+    line-height: 9vh;
+    color: #fff;
+}
+
+.bt::before {
+    left: 0;
+    transform: translate(calc(-38vh), -50%);
+    background: url(../image/gw/zb.png) center no-repeat;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 35.6vh;
+    height: 1.3vh;
+}
+
+.bt::after {
+    left: 0;
+    transform: translate(calc(12vh), -50%) rotateY(180deg);
+    background: url(../image/gw/zb.png) center no-repeat;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 35.6vh;
+    height: 1.3vh;
+    color: #fff;
+}
+
+.middle .three .btn2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    margin-top: 9vh;
+    border: none;
+    background: transparent;
+    color: #fff;
+}
+
+.middle .three .btn2::before {
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 54px;
+    height: 54px;
+    transform-origin: center;
+    background: url(../image/gw/xan.png) center no-repeat;
+    background-size: 100% auto;
+}
+
+.middle .three .btn2::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -40%;
+    width: 98px;
+    height: 98px;
+    background: url(../image/gw/xanbj.png) center no-repeat;
+    background-size: cover;
+    transform-origin: center;
+    animation: wave 1s linear infinite;
+}
+
+.bg1 {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(18, 18, 18, 0.75);
+    border: 1px solid #030000;
+    padding-top: 106px;
+}
+
+.bg1 .nr .bottom::-webkit-scrollbar {
+    width: 4px;
+    position: absolute;
+    min-height: 30px;
+    top: 528px;
+    display: block;
+    height: 117px;
+    max-height: 635px;
+    border-radius: 2px;
+    opacity: .1;
+}
+
+.bg1 .nr .bottom::-webkit-scrollbar-track {
+    background: #756157;
+    width: 4px;
+    opacity: 0.1;
+}
+
+.bg1 .nr .bottom::-webkit-scrollbar-thumb {
+    width: 4px;
+    line-height: 30px;
+    background: #f5f0e4;
+    box-shadow: 0px 1px 1px 0px rgba(51, 51, 51, 0.06);
+}
+
+.hh {
+    width: 540px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 28px;
+    color: #fff;
+    padding-left: 24px;
+    background: rgba(128, 128, 128, 0.1) url(../image/gw/hh.png) no-repeat left center/auto 100%;
+    display: inline-block;
+    margin-left: 30vw;
+}
+
+.hh2 {
+    position: absolute;
+    top: 106px;
+    left: 68vw;
+    width: 50px;
+    height: 50px;
+    background: rgba(128, 128, 128, 0.1) url(../image/gw/gban.png) center no-repeat;
+    background-size: 20px;
+    border: none;
+}
+
+.middle .bg1 .nr .bottom {
+    position: absolute;
+    width: 636px;
+    height: 500px;
+    margin-top: 20px;
+    left: 30vw;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.middle .bg1 .nr .bottom p {
+    color: #fff;
+    margin-top: 20px;
+    width: 580px;
+}
+
+.h1 {
+    position: relative;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 66px;
+    height: 66px;
+    width: 580px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 70px;
+    height: 3px;
+    background: #cca574;
+}
+
+
+/* four */
+
+.middle .four {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/gw/sjdaoqi.jpg);
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.middle .four .dl {
+    position: absolute;
+    top: 15%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5vh;
+}
+
+.middle .four .dl .dl1 {
+    width: 55%;
+}
+
+.bt {
+    display: block;
+    position: relative;
+    font-weight: 400;
+    font-size: 4.6vh;
+    line-height: 9vh;
+    color: #fff;
+}
+
+.bt::before {
+    left: 0;
+    transform: translate(calc(-38vh), -50%);
+    background: url(../image/gw/zb.png) center no-repeat;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 35.6vh;
+    height: 1.3vh;
+}
+
+.bt::after {
+    left: 0;
+    transform: translate(calc(12vh), -50%) rotateY(180deg);
+    background: url(../image/gw/zb.png) center no-repeat;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 35.6vh;
+    height: 1.3vh;
+    color: #fff;
+}
+
+.middle .four .btn3 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    margin-top: 9vh;
+    border: none;
+    background: transparent;
+    color: #fff;
+}
+
+.middle .four .btn3::before {
+    z-index: 2;
+    display: block;
+    content: '';
+    width: 54px;
+    height: 54px;
+    transform-origin: center;
+    background: url(../image/gw/xan.png) center no-repeat;
+    background-size: 100% auto;
+}
+
+.middle .four .btn3::after {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -40%;
+    width: 98px;
+    height: 98px;
+    background: url(../image/gw/xanbj.png) center no-repeat;
+    background-size: cover;
+    transform-origin: center;
+    animation: wave 1s linear infinite;
+}
+
+.bg2 {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(18, 18, 18, 0.75);
+    border: 1px solid #030000;
+    padding-top: 106px;
+}
+
+.bg2 .nr .bottom::-webkit-scrollbar {
+    width: 4px;
+    position: absolute;
+    min-height: 30px;
+    top: 528px;
+    display: block;
+    height: 117px;
+    max-height: 635px;
+    border-radius: 2px;
+    opacity: .1;
+}
+
+.bg2 .nr .bottom::-webkit-scrollbar-track {
+    background: #756157;
+    width: 4px;
+    opacity: 0.1;
+}
+
+.bg2 .nr .bottom::-webkit-scrollbar-thumb {
+    width: 4px;
+    line-height: 30px;
+    background: #f5f0e4;
+    box-shadow: 0px 1px 1px 0px rgba(51, 51, 51, 0.06);
+}
+
+.hh {
+    width: 540px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 28px;
+    color: #fff;
+    padding-left: 24px;
+    background: rgba(128, 128, 128, 0.1) url(../image/gw/hh.png) no-repeat left center/auto 100%;
+    display: inline-block;
+    margin-left: 30vw;
+}
+
+.hh3 {
+    position: absolute;
+    top: 106px;
+    left: 68vw;
+    width: 50px;
+    height: 50px;
+    background: rgba(128, 128, 128, 0.1) url(../image/gw/gban.png) center no-repeat;
+    background-size: 20px;
+    border: none;
+}
+
+.middle .bg2 .nr .bottom {
+    position: absolute;
+    width: 636px;
+    height: 500px;
+    margin-top: 20px;
+    left: 30vw;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.middle .bg2 .nr .bottom p {
+    color: #fff;
+    margin-top: 20px;
+    width: 580px;
+}
+
+.h1 {
+    position: relative;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 66px;
+    height: 66px;
+    width: 580px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.1);
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.h1::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 70px;
+    height: 3px;
+    background: #cca574;
+}

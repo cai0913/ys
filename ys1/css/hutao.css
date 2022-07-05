@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e0dad3;
+}
+
+.dh {
+    display: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 82px;
+    background-color: #333;
+}
+
+.dh img {
+    vertical-align: middle;
+    line-height: 82px;
+    height: 70px;
+    padding: 6px 75px 6px 5px;
+}
+
+.dh ul {
+    width: 100%;
+    align-items: center;
+}
+
+.dh ul li {
+    float: left;
+    justify-content: center;
+    line-height: 82px;
+    text-align: center;
+    list-style: none;
+    margin-right: 10px;
+    width: 116px;
+    height: 82px;
+}
+
+.dh ul li a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.main {
+    width: 80vw;
+    margin: 0 auto;
+    background-color: #f0ece8;
+}
+
+.main .top {
+    width: 80%;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+
+.main .top h1 {
+    display: inline-block;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+.main .top span {
+    font-size: 20px;
+}
+
+.main .top .img1 {
+    float: right;
+    margin-top: 15px;
+    margin-left: 20px;
+    width: 150px;
+    border: 1px solid #000;
+}
+
+.main .top .img2 {
+    float: right;
+    width: 330px;
+}
+
+.main .top b {
+    display: block;
+    text-indent: 2em;
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+
+.main .top p {
+    padding-bottom: 10px;
+    text-indent: 2em;
+    line-height: 30px;
+}
+
+.main .top h2 {
+    font-weight: normal;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.main .top hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.main .middle {
+    margin: 0 auto;
+    width: 80%;
+    padding-bottom: 30px;
+}
+
+.main .middle h2 {
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+
+.main .middle b {
+    display: block;
+    padding-bottom: 40px;
+}
+
+.main .middle table {
+    display: block;
+    clear: both;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-color: #4d4c4c;
+    width: 800px;
+    margin-left: 14vh;
+}
+
+.main .middle table tr {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.main .middle table tr th {
+    border-bottom: 1px solid #4d4c4c;
+    font-weight: 700;
+    height: 23px;
+    background-color: #f8f8f8;
+}
+
+.main .middle table tr td {
+    padding: 2px 10px;
+    font-size: 12px;
+    line-height: 22px;
+    height: 22px;
+    border: 1px solid #666666;
+}
+
+.main .middle table tr td .fk {
+    font-size: 12px;
+    text-indent: 0;
+    margin: 10px auto;
+    word-break: break-all;
+    width: 115px;
+    height: 158px;
+}
+
+.main .middle table tr td .fk img {
+    width: 115px;
+}
+
+.main .middle table tr td .fk span {
+    display: block;
+    color: #555;
+    text-align: center;
+    font-size: 12px;
+    text-indent: 0;
+    font-family: "宋体";
+    font-weight: 400;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-style: normal;
+    line-height: 24px;
+    padding: 8px 7px;
+    min-height: 12px;
+    border: 1px solid #e0e0e0;
+}

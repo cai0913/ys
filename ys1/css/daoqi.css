@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    position: relative;
+    overflow: auto;
+    width: 100%;
+}
+
+.dh {
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    width: 100%;
+    height: 82px;
+    background-color: red;
+    background-color: #333;
+    opacity: .5;
+    z-index: 9999;
+}
+
+.dh:hover {
+    opacity: 1;
+}
+
+.dh img {
+    vertical-align: middle;
+    line-height: 82px;
+    height: 70px;
+    padding: 6px 75px 6px 5px;
+}
+
+.dh ul {
+    width: 100%;
+    align-items: center;
+}
+
+.dh ul li {
+    float: left;
+    justify-content: center;
+    line-height: 82px;
+    text-align: center;
+    list-style: none;
+    margin-right: 10px;
+    width: 116px;
+    height: 82px;
+}
+
+.dh ul li a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: #ccc;
+}
+
+.city {
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
+    font-size: 18px;
+    color: #fff;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    padding-left: 56px;
+    background: 18px center no-repeat;
+    background-image: url(../image/gw/ul.png);
+}
+
+.active {
+    text-shadow: none;
+    padding-left: 60px;
+    background: left center no-repeat;
+    background-image: url(../image/gw/checkedul.png);
+    background-size: contain;
+    pointer-events: none;
+}
+
+.bg {
+    position: relative;
+    min-width: 1280px;
+    height: 100vh;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.bg .one {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-position: center;
+    background-size: cover;
+    transform-origin: center;
+    background-image: url(../image/gw/dqdt.jpg);
+    animation: breath 80s infinite linear;
+    opacity: 1;
+}
+
+.bg .two {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-position: center;
+    background-size: cover;
+    transform-origin: center;
+    background-image: url(../image/gw/dqhh.jpg);
+    animation: bg-change 15s infinite linear, breath 80s infinite linear;
+    opacity: 0;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+.bg ul::before {
+    position: absolute;
+    top: 0;
+    left: 37px;
+    display: block;
+    content: '';
+    width: 2px;
+    height: 1280px;
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.bg ul {
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 100%;
+    box-sizing: border-box;
+    padding-top: 187px;
+}
+
+.bg ul li {
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
+    font-size: 18px;
+    color: #fff;
+    box-sizing: border-box;
+    user-select: none;
+    /* display: list-item; */
+    text-align: -webkit-match-parent;
+}
+
+.bg ul li a {
+    text-decoration: none;
+    display: inline-block;
+    width: 40%;
+    height: 100%;
+    color: #fff;
+    cursor: pointer;
+}
+
+@keyframes bg-change {
+    48% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    98% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes breath {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.bg .zi {
+    position: absolute;
+    margin-bottom: 15px;
+    left: 20%;
+    top: 22%;
+    z-index: 999;
+}
+
+.bg .zi::before {
+    display: block;
+    content: '';
+    width: 130px;
+    height: 4px;
+    background: #e3bc8c;
+    margin-bottom: 10px;
+}
+
+.bg .cv {
+    position: absolute;
+    left: 20%;
+    top: 37%;
+    display: flex;
+    width: 280px;
+    height: 54px;
+    font-size: 24px;
+    color: #24333c;
+    line-height: 54px;
+    padding-left: 60px;
+    box-sizing: border-box;
+    background: #cca574;
+    background-position: left top;
+    background-size: 54px;
+    margin-top: -10px;
+    box-shadow: 2px 3px 6px 0 rgba(12, 12, 12, 0.2);
+    z-index: 9999;
+}
+
+.bg .cv {
+    text-align: center;
+    line-height: 54px;
+    vertical-align: middle;
+}
+
+.bg .cv span {
+    display: inline-block;
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 54px;
+}
+
+.bg .cv .lf {
+    position: absolute;
+    left: 0;
+}
+
+.bg .cv .rg {
+    position: absolute;
+    right: 0;
+}
+
+.bg .cv .au {
+    position: absolute;
+    left: 80%;
+    top: 2%;
+    width: 50;
+    height: 50px;
+    background-color: pink;
+}
+
+.bg .ys {
+    position: absolute;
+    left: 15%;
+    top: 13%;
+    width: 360px;
+    height: 378;
+    z-index: 9998;
+    opacity: .2;
+}
+
+.bg .bottom {
+    position: absolute;
+    top: 80vh;
+    width: 100vw;
+    height: 20vh;
+    background: rgba(255, 255, 255, .3);
+    z-index: 999;
+    text-align: center;
+    line-height: 20vh;
+}
+
+.bg .bottom .left,
+.bg .bottom .right {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.bottom .js {
+    display: inline-block;
+}
+
+.bg .bottom .js .tx {
+    display: inline-block;
+    vertical-align: middle;
+    width: 100px;
+    height: 110px;
+    border-radius: 10px;
+    margin: 0 20px;
+    background: rgba(6, 6, 6, .5);
+    box-sizing: border-box;
+}
+
+.bg .bottom .js .tx:hover {
+    border: 2px solid white;
+    box-shadow: 0 0 50px gold;
+}
+
+.selected {
+    border: 2px solid white;
+    box-shadow: 0 0 50px gold;
+}
+
+.bg .my {
+    position: absolute;
+    left: 39%;
+    top: 65%;
+    width: 300px;
+    height: 110px;
+    z-index: 9999;
+}
+
+.bg .yl {
+    width: 480px;
+    height: 130px;
+    background: rgba(0, 0, 0, .6);
+    z-index: 999;
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    color: #ccc;
+}
+
+.bg .yl .yl1 {
+    position: absolute;
+    top: 11%;
+    box-sizing: border-box;
+    width: auto;
+    margin: 0;
+    padding-top: 0;
+    padding-left: 40px;
+    padding-right: 20px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    font-size: 13px;
+    color: #fff;
+    line-height: 23px;
+}
+
+.bg .yl::before {
+    flex-shrink: 0;
+    display: inline-block;
+    content: '';
+    width: 20px;
+    height: 20px;
+    background: url(../image/gw/dl.png) center no-repeat;
+    background-size: 20px;
+    margin-right: 24px;
+    margin-top: 4px;
+    padding: 10px 10px;
+}
+
+.bg .rw {
+    width: 50vw;
+    height: calc(100vh - 0px);
+    position: absolute;
+    left: 20%;
+    z-index: 999;
+}
+
+.bg .rw img {
+    height: 100%;
+}

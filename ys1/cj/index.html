@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>动漫分类图片切换</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <div class="isg__Img__wrap" id="wrap">
+        <!-- <div class="isg__Img__container">
+            <ul class="isg__Img_container__category">
+                <li class="isg__Img_container__category-btn isg__Img_container__category-btn-active">全部</li>
+                <li class="isg__Img_container__category-btn">分类1</li>
+                <li class="isg__Img_container__category-btn">分类2</li>
+                <li class="isg__Img_container__category-btn">分类3</li>
+            </ul>
+            <div class="isg__Img_container__imgcontainer">
+                <figure>
+                    <img src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <figure>
+                    <img src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+                <figure>
+                    <img src="" alt="">
+                    <figcaption></figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="isg__Img__overlay">
+            <div class="isg__Img__overlay-btn-prev"></div>
+            <div class="isg__Img__overlay-btn-next"></div>
+            <img src="" alt="">
+        </div> -->
+    </div>
+    <script src="./assets/js/data.js"></script>
+    <script src="./assets/js/index.js"></script>
+    <script>
+        const img = new $isg_Img({
+            data:data,
+            curType: '全部',
+            parasitifer: '#wrap'
+        });
+        // console.log(data);
+        // let allImgSrcs = [];
+        // let categoryMap = {'all':[]};
+        // data.forEach(({type,src,alt,title})=>{
+        //     let figureEl = `
+        //         <figure>
+        //             <img src="${src}" alt="${alt}">
+        //             <figcaption>${title}</figcaption>
+        //         </figure>
+        //     `;
+        //     if(!Object.keys(categoryMap).includes(type)) {
+        //         categoryMap[type] = [];
+        //     }
+        //     categoryMap[type].push(figureEl);
+        //     if (allImgSrcs.indexOf(src) === -1) {
+        //         allImgSrcs.push(src);
+        //         categoryMap['all'].push(figureEl);
+        //     }
+        // });
+        // let imgContainer = document.querySelector('.isg__Img_container__imgcontainer');
+        // imgContainer.childNodes.forEach(item =>{
+        //     imgContainer.removeChild(item);
+        // });
+        // imgContainer.innerHTML = categoryMap['all'].join('');
+
+        // let overlay = document.querySelector('.isg__Img__overlay')
+        // let previewImg = overlay.querySelector('img');
+        // document.querySelectorAll('.isg__Img_container__imgcontainer figure').forEach(figure=>{
+        //     figure.addEventListener('click',({target}) => {
+        //         if(target.nodeName === 'FIGCAPTION') target = target.parentNode;
+        //         let img = target.querySelector('img');
+        //         previewImg.src = img.src;
+        //         overlay.style.display='flex';
+        //     })
+        // })
+
+    </script>
+</body>
+</html>

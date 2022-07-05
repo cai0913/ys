@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    text-align: center;
+    height: 100vh;
+    background-image: url(../image/hxxwzf.jpg);
+    background-size: cover;
+}
+
+.login-header {
+    width: 100%;
+    text-align: center;
+    height: 112px;
+    line-height: 112px;
+    margin: 65vh 30vh;
+    margin-left: 230px;
+}
+
+.login-header audio {
+    position: fixed;
+    display: inline-block;
+    top: 0;
+    left: 0;
+}
+
+#div1 {
+    display: inline-block;
+    width: 230px;
+    height: 15px;
+    border-top: 5px solid #fff6b8;
+}
+
+#div2 {
+    display: inline-block;
+    width: 230px;
+    height: 15px;
+    border-top: 5px solid #fff6b8;
+}
+
+.login-header a {
+    width: 100%;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-size: 80px;
+    /* color: rgba(255, 244, 183, 1); */
+    color: transparent;
+    vertical-align: middle;
+    background: linear-gradient(to right, #fff6b8, #fff6b8, #fff6b8, #e79c63, #fff6b8, #fff6b8, #fff6b8, #fff6b8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: light 3s infinite;
+}
+
+
+/* .login-header a::after {
+    content: '进入提瓦特';
+    color: transparent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 112px;
+    text-align: center;
+    background: linear-gradient(to right, #fff6b8, #fff6b8, #fff6b8, #e79c63, #fff6b8, #fff6b8, #fff6b8, #fff6b8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    animation: light 3s infinite;
+} */
+
+@keyframes light {
+    0% {
+        opacity: 1;
+        color: rgba(255, 244, 183, 1);
+    }
+    50% {
+        opacity: 0;
+        color: rgba(255, 244, 183, 0);
+    }
+    100% {
+        opacity: 1;
+        color: rgba(255, 244, 183, 1);
+    }
+}

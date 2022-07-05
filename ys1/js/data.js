@@ -1,0 +1,106 @@
+const data = [{
+    type: '角色',
+    title: '可莉',
+    alt: '可莉',
+    src: '../image/gw/js1.jpg',
+}, {
+    type: '轻风雅游',
+    title: '轻风雅游',
+    alt: '轻风雅游',
+    src: '../image/bz9.jpg',
+}, {
+    type: '角色',
+    title: '甘雨',
+    alt: '甘雨',
+    src: '../image/gw/js3.jpg',
+}, {
+    type: '轻风雅游',
+    title: '轻风雅游',
+    alt: '轻风雅游',
+    src: '../image/bz10.jpg',
+}, {
+    type: '角色',
+    title: '魈',
+    alt: '魈',
+    src: '../image/gw/js4.jpg',
+}, {
+    type: '角色',
+    title: '钟离',
+    alt: '钟离',
+    src: '../image/gw/js5.jpg',
+}, {
+    type: '轻风雅游',
+    title: '轻风雅游',
+    alt: '轻风雅游',
+    src: '../image/bz8.jpg',
+}, {
+    type: '角色',
+    title: '优菈',
+    alt: '优菈',
+    src: '../image/gw/js6.jpg',
+}, {
+    type: '角色',
+    title: '雷电将军',
+    alt: '雷电将军',
+    src: '../image/gw/js7.jpg',
+}, {
+    type: '角色',
+    title: '珊瑚宫心海',
+    alt: '珊瑚宫心海',
+    src: '../image/gw/js8.jpg',
+}, {
+    type: '角色',
+    title: '温迪',
+    alt: '温迪',
+    src: '../image/gw/js9.jpg',
+}, {
+    type: '轻风雅游',
+    title: '轻风雅游',
+    alt: '轻风雅游',
+    src: '../image/bz1.jpg',
+}, {
+    type: '轻风雅游',
+    title: '轻风雅游',
+    alt: '轻风雅游',
+    src: '../image/bz2.jpg',
+}, {
+    type: '轻风雅游',
+    title: '轻风雅游',
+    alt: '轻风雅游',
+    src: '../image/bz3.jpg',
+}, {
+    type: '角色',
+    title: '胡桃',
+    alt: '胡桃',
+    src: '../image/gw/js2.jpg',
+}, {
+    type: '轻风雅游',
+    title: '轻风雅游',
+    alt: '轻风雅游',
+    src: '../image/bz4.jpg',
+}, {
+    type: '轻风雅游',
+    title: '轻风雅游',
+    alt: '轻风雅游',
+    src: '../image/bz5.jpg',
+}, {
+    type: '轻风雅游',
+    title: '轻风雅游',
+    alt: '轻风雅游',
+    src: '../image/bz6.jpg',
+}, {
+    type: '轻风雅游',
+    title: '轻风雅游',
+    alt: '轻风雅游',
+    src: '../image/bz7.jpg',
+}, {
+    type: '轻风雅游',
+    title: '轻风雅游',
+    alt: '轻风雅游',
+    src: '../image/bz11.jpg',
+}, {
+    type: '轻风雅游',
+    title: '轻风雅游',
+    alt: '轻风雅游',
+    src: '../image/bz12.jpg',
+}]

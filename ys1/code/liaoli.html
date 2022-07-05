@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>料理</title>
+    <link rel="stylesheet" href="../css/liaoli.css">
+    <script src="../js/flexible.js"></script>
+    <script src="../js/jquery-1.12.4.js"></script>
+    <script src="../js/echarts.js"></script>
+    <link id="icon" rel="shortcut icon" href="https://genshin.mihoyo.com/favicon.ico" />
+</head>
+
+<body>
+    <div class="dh">
+        <img src="../image/ys.png" alt="">
+        <ul>
+            <li><a href="./index1.html">主页</a></li>
+            <li><a href="./jsintroduce.html">角色介绍</a></li>
+            <li><a href="./wallpaper.html">壁纸</a></li>
+            <li><a href="./jsclassification.html">角色分类</a></li>
+            <li><a href="./liaoli.html">特殊料理</a></li>
+            <li><a href="./shijie.html">世界</a></li>
+        </ul>
+    </div>
+    <p></p>
+    <div class="ajaxmiddle">
+        <div class="top">
+            <h2>角色查询</h2>
+            <input type="text" class="search-input"><button class="search">查询</button><button class="add">新增</button>
+        </div>
+        <div class="jslist">
+            <table>
+                <tr>
+                    <th data-name="id">角色编号</th>
+                    <th data-name="name">姓名</th>
+                    <th data-name="starts">星级</th>
+                    <th data-name="element">元素</th>
+                    <th data-name="birthday">生日</th>
+                    <th data-name="address">所属</th>
+                    <th data-name="weapon">专属武器</th>
+                    <th data-name="title">称号</th>
+                    <th>操作</th>
+                </tr>
+            </table>
+        </div>
+        <div class="edit" style="display:none">
+            <div class="edit-bg"></div>
+            <div class="edit-center">
+                <div class="edit-title">角色信息编辑</div>
+                <p><span>角色编号：</span><input type="text" name="id"></p>
+                <p><span>姓名：</span><input type="text" name="name"></p>
+                <p><span>星级：</span><input type="text" name="starts"></p>
+                <p><span>元素：</span><input type="text" name="element"></p>
+                <p><span>生日：</span><input type="text" name="birthday"></p>
+                <p><span>所属：</span><input type="text" name="address"></p>
+                <p><span>专属武器：</span><input type="text" name="weapon"></p>
+                <p><span>称号：</span><input type="text" name="title"></p>
+                <p><button class="edit-save">提交</button><button class="edit-cancel">取消</button></p>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <h1>角色特殊料理展示</h1>
+        <ul class="main1">
+            <li>
+                <img src="../image/gw/kq.jpg" alt="" width="241" class="lh">
+                <div class="top"><img src="../image/gw/kchy.png" alt="" class="ll" title="烤吃虎鱼"></div>
+                <div class="middle"><img src="../image/gw/kqmp.png" alt="" width="241"></div>
+                <div class="bottom"><img src="../image/gw/jjqsky.png" alt="" class="tsll" title="绝境求生烤鱼"></div>
+            </li>
+            <li>
+                <img src="../image/gw/dlk.jpg" alt="" width="241" class="lh">
+                <div class="top"><img src="../image/gw/dgg.png" alt="" class="ll" title="堆高高"></div>
+                <div class="middle"><img src="../image/gw/dlkmp.png" alt="" width="241"></div>
+                <div class="bottom"><img src="../image/gw/mdws.png" alt="" class="tsll" title="蒙德往事"></div>
+            </li>
+            <li>
+                <img src="../image/gw/sh.jpg" alt="" width="241" class="lh">
+                <div class="top"><img src="../image/gw/lxm1.png" alt="" class="ll" title="龙须面"></div>
+                <div class="middle"><img src="../image/gw/shmp.png" alt="" width="241"></div>
+                <div class="bottom"><img src="../image/gw/lxm.png" alt="" class="tsll" title="连心面"></div>
+            </li>
+            <li>
+                <img src="../image/gw/bcsz1.jpg" alt="" width="241" class="lh">
+                <div class="top"><img src="../image/gw/wdm.png" alt="" class="ll" title="乌冬面"></div>
+                <div class="middle"><img src="../image/gw/bcszmp.png" alt="" width="241"></div>
+                <div class="bottom"><img src="../image/gw/fnwd.png" alt="" class="tsll" title="福内乌东"></div>
+            </li>
+            <li>
+                <img src="../image/gw/kl.jpg" alt="" width="241" class="lh">
+                <div class="top"><img src="../image/gw/yrts.png" alt="" class="ll" title="渔人吐司"></div>
+                <div class="middle"><img src="../image/gw/klmp.png" alt="" width="241"></div>
+                <div class="bottom"><img src="../image/gw/yxts.png" alt="" class="tsll" title="鱼香吐司"></div>
+            </li>
+            <li>
+                <img src="../image/gw/yl.jpg" alt="" width="241" class="lh">
+                <div class="top"><img src="../image/gw/ylp.png" alt="" class="ll" title="月亮派"></div>
+                <div class="middle"><img src="../image/gw/ylmp.png" alt="" width="241"></div>
+                <div class="bottom"><img src="../image/gw/hlp.png" alt="" class="tsll" title="骇浪派"></div>
+            </li>
+
+        </ul>
+    </div>
+    <div id="bottom" style="width: 90%;height: 500px;">
+    </div>
+    <script>
+        var myChart = echarts.init(document.getElementById('bottom'));
+        myChart.setOption({
+            title: {
+                x: 'center',
+                text: '原神人气男角色票数占比',
+            },
+            tooltip: {
+                trigger: 'item',
+                formatter: '{b}:\n{c}%'
+            },
+            xAxis: {
+                type: 'category',
+                data: ['钟离', '枫原万叶', '魈', '达达利亚', '温迪', '迪卢克', '荒泷一斗', '阿贝多', '行秋', '凯亚', '班尼特', '雷泽', '五郎', '重云', '托马'],
+                axisLabel: {
+                    interval: 0 //设置间隔为0
+                }
+            },
+            yAxis: [{
+                type: 'value',
+                axisLabel: {
+                    show: true,
+                    interval: 'auto',
+                    formatter: '{value} %'
+                },
+            }],
+            series: [{
+                itemStyle: {
+                    normal: {
+                        color: function(params) {
+                            // build a color map as your need.
+                            var colorList = [
+                                '#C1232B', '#B5C334', '#FCCE10', '#E87C25', '#27727B',
+                                '#FE8463', '#9BCA63', '#FAD860', '#F3A43B', '#60C0DD',
+                                '#D7504B', '#C6E579', '#F4E001', '#F0805A', '#26C0C0'
+                            ];
+                            return colorList[params.dataIndex]
+                        },
+                        label: {
+                            show: true,
+                            position: 'top',
+                            formatter: '{b}\n{c}%'
+                        }
+                    },
+                },
+                data: [36.63, 15.71, 13.83, 8.46, 6.54, 5.37, 3.02, 2.53, 2.01, 1.53, 1.49, 0.92, 0.66, 0.65, 0.64],
+                type: 'bar'
+            }]
+        })
+    </script>
+    <script src="../js/operate.js"></script>
+    <script>
+        $(".main1>li").mouseenter(function() {
+            var index = $(this).index();
+            $(".lh").eq(index).stop().slideUp(200);
+            $(".lh").siblings().css('display', 'block');
+        });
+        $(".main1>li").mouseleave(function() {
+            var index = $(this).index();
+            $(".lh").eq(index).stop().slideDown(200);
+            $(".lh").siblings().css('display', 'none');
+        });
+    </script>
+</body>
+
+</html>
